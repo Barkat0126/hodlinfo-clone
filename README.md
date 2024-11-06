@@ -1,4 +1,4 @@
-# Hodlinfo Clone
+# Crypto Currency Tracker
 
 A web-based cryptocurrency tracking application built using Node.js, Express, MongoDB, and a simple frontend to display real-time cryptocurrency data. This project fetches cryptocurrency information from the WazirX API and displays it on the frontend with an interactive interface.
 
