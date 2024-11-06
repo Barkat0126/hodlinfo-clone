@@ -1,0 +1,239 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.header h1 {
+  font-size: 2rem;
+  color: #00bcd4;
+}
+
+.header-buttons button {
+  background-color: #282828;
+  color: #ffffff;
+  border: none;
+  padding: 8px 12px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+}
+
+.timer {
+  color: #00bcd4;
+  margin-right: 12px;
+}
+
+.connect-telegram {
+  background-color: #00bcd4;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  margin-right: 12px;
+}
+
+.toggle-switch {
+  position: relative;
+}
+
+.theme-toggle {
+  display: none;
+}
+
+.theme-toggle + label {
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  background: #555;
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.theme-toggle + label::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  transition: 0.3s;
+}
+
+.theme-toggle:checked + label::before {
+  left: 21px;
+}
+
+.main-content {
+  text-align: center;
+}
+
+.market-info {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+}
+
+.market-percentage p {
+  font-size: 1.2rem;
+  color: #00bcd4;
+}
+
+.market-percentage span {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.best-price h2 {
+  font-size: 1.2rem;
+  color: #888;
+}
+
+.best-price .price {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin: 8px 0;
+}
+
+.price-table {
+  width: 100%;
+  margin: 20px 0;
+  border-collapse: collapse;
+}
+
+.price-table th, .price-table td {
+  padding: 12px 8px;
+  text-align: center;
+}
+
+.price-table th {
+  background-color: #333;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.price-table tr:nth-child(odd) {
+  background-color: #282828;
+}
+
+.price-table tr:nth-child(even) {
+  background-color: #1f1f1f;
+}
+
+.price-table td.positive {
+  color: #00bcd4;
+}
+
+.price-table td.negative {
+  color: #ff3b3b;
+}
+
+.add-button {
+  background-color: #00bcd4;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+/* Default styling (no color change) */
+td {
+  color: inherit;
+}
+
+/* Red color for negative values */
+.negative {
+  color: red;
+}
+/* Default styling (no color change) */
+td {
+  color: inherit;
+}
+
+/* Red color for negative values */
+.negative {
+  color: red;
+}
+
+/* Styling for images */
+td img {
+  border-radius: 50%;
+}
+/* Default styling (no color change) */
+td {
+  color: inherit;
+}
+
+/* Red color for negative values, green for positive */
+.negative {
+  color: red;
+}
+td.savingsClass:not(.negative) {
+  color: #00bcd4;
+}
+
+/* Styling for images */
+td img {
+  border-radius: 50%;
+}
+
+/* Triangle icon styling */
+td .savingsClass {
+  font-weight: bold;
+  padding-left: 4px;
+}
+/* Default styling for cells */
+td {
+  color: inherit;
+}
+
+/* Red color for negative values, green for positive values */
+.negative {
+  color: red;
+}
+.positive {
+  color: #00bcd4;
+}
+
+/* Arrow styling to match positive/negative trends */
+.arrow {
+  font-weight: bold;
+  margin-right: 4px;
+}
+.positive {
+  color: #00bcd4;
+}
+
+.negative {
+  color: red;
+}

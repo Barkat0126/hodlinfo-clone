@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crypto Price Tracker</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>HODLINFO</h1>
+      <div class="header-buttons">
+        <button>INR</button>
+        <button>BTC</button>
+        <button>BUY BTC</button>
+      </div>
+      <div class="header-actions">
+        <span class="timer" id="update-timer">60</span>
+        <button class="connect-telegram">Connect Telegram</button>
+        <div class="toggle-switch">
+          <input type="checkbox" id="theme-toggle" class="theme-toggle">
+          <label for="theme-toggle"></label>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <div class="market-info">
+        <div class="market-percentage">
+          <p id="price-change-5min">0.1 %</p>
+          <span>5 Mins</span>
+        </div>
+        <div class="market-percentage">
+          <p id="price-change-1hour">0.96 %</p>
+          <span>1 Hour</span>
+        </div>
+        <div class="best-price">
+          <h2>Best Price to Trade</h2>
+          <p class="price" id="best-price">₹ 26,56,110</p>
+          <span>Average BTC/INR net price including commission</span>
+        </div>
+        <div class="market-percentage">
+          <p id="price-change-1day">2.73 %</p>
+          <span>1 Day</span>
+        </div>
+        <div class="market-percentage">
+          <p id="price-change-7days">7.51 %</p>
+          <span>7 Days</span>
+        </div>
+      </div>
+
+      <table class="price-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Platform</th>
+            <th>Last Traded Price</th>
+            <th>Buy / Sell Price</th>
+            <th>Difference</th>
+            <th>Savings</th>
+          </tr>
+        </thead>
+        <tbody id="crypto-table">
+          <!-- Data rows will be added here by JavaScript -->
+        </tbody>
+      </table>
+
+      <button class="add-button">Add to home screen</button>
+    </main>
+  </div>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>
